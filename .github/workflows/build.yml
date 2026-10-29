@@ -1,0 +1,28 @@
+
+name: Build GYRA Optimizer
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build Geode Mod
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Check project files
+        run: |
+          test -f mod.json
+          test -f CMakeLists.txt
+          test -f Src/Main.cpp
+          echo "File utama GYRA ditemukan."
+
+      - name: Build with Geode SDK
+        uses: geode-sdk/build-geode-mod@main
+        
