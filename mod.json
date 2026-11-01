@@ -1,0 +1,12 @@
+
+{
+    "geode": "4.0.0",
+    "gd": {
+        "android": "2.2081"
+    },
+    "id": "mirza.gyra_optimizer",
+    "name": "GYRA Optimizer",
+    "version": "v1.0.0",
+    "developer": "hirzze",
+    "description": "Optimize Geometry Dash visual effects with Super Ultra Low Detail Mode."
+}
